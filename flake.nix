@@ -12,11 +12,11 @@
         nixosConfigurations.mini-pc = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
-            ./hosts/mini-pc/configuration.nix
-            ./hosts/mini-pc/hardware-configuration.nix
-            ./modules/tailscale.nix
-            ./modules/starship.nix
-            ./modules/terminal-tools.nix
+            /configuration.nix
+            /hardware-configuration.nix
+            /tailscale.nix
+            /starship.nix
+            /terminal-tools.nix
           ];
         };
       }
